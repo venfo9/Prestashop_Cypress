@@ -1,7 +1,6 @@
 import Home from "./PageObject/Home";
 import Login from "./PageObject/Login";
 import MyAccount from "./PageObject/MyAccount";
-import ErrorHandler from "../handler/ErrorHandler";
 
 describe ("Prestashop", function () {
 
