@@ -1,4 +1,4 @@
-import Header from "./PageObject/Header";
+import Home from "./PageObject/Home";
 import Login from "./PageObject/Login";
 import MyAccount from "./PageObject/MyAccount";
 import ErrorHandler from "../handler/ErrorHandler";
@@ -7,14 +7,11 @@ describe ("Prestashop", function () {
 
 
     it("ValidLoginTest", () => {
-        const errorHandler = new ErrorHandler()
-        errorHandler.MathCalculateIsNotDefined()
-        cy.visit("http://prestashop.qatestlab.com.ua/en/");
-        cy.viewport(1920, 1080);
-        cy.location("protocol").should("eq","http:");
 
-        const header = new Header();
-        header.clickBtnSignIn();
+
+        const home = new Home();
+        home.goToHomePage();
+        home.clickBtnSignIn();
 
         cy.fixture("prestashop").then((data)=>{
             const login = new Login();
@@ -29,15 +26,10 @@ describe ("Prestashop", function () {
     });
 
     it("WrongPass", () => {
-        const errorHandler = new ErrorHandler()
-        errorHandler.MathCalculateIsNotDefined()
 
-        cy.visit("http://prestashop.qatestlab.com.ua/en/");
-        cy.viewport(1920, 1080);
-        cy.location("protocol").should("eq","http:");
-
-        const header = new Header();
-        header.clickBtnSignIn();
+        const home = new Home();
+        home.goToHomePage();
+        home.clickBtnSignIn();
 
         cy.fixture("prestashop").then((data)=>{
             const login = new Login();
