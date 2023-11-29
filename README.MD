@@ -4,13 +4,14 @@ Email and password are stored in the fixtures directory.
 Additionally, there is an error handler class that ignores some error related to JS elements on the site because, without it, the tests fail.
 
 Tests flow:
-
+Test 1
 1. Open the site
 2. Go to the login page
 3. Enter valid credentials
 4. Login
 5. Compare the expected head title value with the actual
--
+------
+Test 2
 1. Open the site
 2. Go to the login page
 3. Enter invalid credentials
