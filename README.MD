@@ -10,7 +10,7 @@ Tests flow:
 3. Enter valid credentials
 4. Login
 5. Compare the expected head title value with the actual
-
+-
 1. Open the site
 2. Go to the login page
 3. Enter invalid credentials
