@@ -27,8 +27,11 @@ Test 2
 
 **Pages**: 
 **Home.js**: The `Home` class represents the page object model for the home page and click action to go to the login page.
+
 **Login.js**: The `Login` class represents the page object model for the login page. It enters user credentials, and performing login actions.
+
 **MyAccount.js**: The `MyAccount` class represents the page object model for my cabinet page. It validates the page title on my cabinet page.
+
 
 **prestashop.json**: The module provides a user credential.
 
