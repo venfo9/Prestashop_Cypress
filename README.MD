@@ -25,7 +25,6 @@ Test 2
 
 **Auth.cy.js**: This file includes test scenarios that verify the functionality of the e-commerce application.
 
-**Pages**: 
 **Home.js**: The `Home` class represents the page object model for the home page and click action to go to the login page.
 
 **Login.js**: The `Login` class represents the page object model for the login page. It enters user credentials, and performing login actions.
